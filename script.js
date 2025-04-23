@@ -6,7 +6,12 @@ document,addEventListener('DOMContentLoaded', function(){
       botaoDeAcessibilidade.classList.toggle('rotacao-botao');
       opcoesAcessibilidade.classList.toggle('apresenta-lista');
     })
-    
+
+    const alternaContraste = document.getElementById('alterna-contraste')
+    alternaContraste.addEventListener('click', function()){
+        this.document.body.classList.toogle('alto-contraste')
+    }
+
     let tamanhoAtualFonte = 1;
 
     const aumentaFonteBotao = document.getElementById('aumentar-fonte');
@@ -23,4 +28,5 @@ document,addEventListener('DOMContentLoaded', function(){
         document.body.style.fontSize = `${tamanhoAtualFonte}rem`
     }) 
 })
+
 
